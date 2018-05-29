@@ -13,12 +13,16 @@ function addElementToEndOfArray(array, element) {
   return [...array, element]
 }
 
-destructivelyAddElementToEndOfArray(array,element){
+function destructivelyAddElementToEndOfArray(array,element){
   array.push(element)
   return array
 }
 
-accessElementInArray(array, index){
+function accessElementInArray(array, index){
   return array[index]
 }
 
+function destructivelyRemoveElementFromBeginningOfArray(array){
+  array.shift()
+  return array
+}
